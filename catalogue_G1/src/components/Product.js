@@ -20,8 +20,8 @@ const Product = ({ product }) => {
   }, [product.title]);
 
   return (
-    <div>
-      <div className="overflow-hidden w-[300px] aspect-[3/2]">
+    <div className="min-w-[200px] max-w-[300px] aspect-[3/2]">
+      <div className="overflow-hidden min-w-[200px] max-w-[300px] aspect-[3/2]">
         <img
           className="w-full"
           src={posterUrl || ""}

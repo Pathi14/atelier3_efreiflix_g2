@@ -2,7 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
     @apply bg-neutral-800;
     @apply text-neutral-100;
+}
+
+.slick-track {
+    margin-left: 0 !important;
+}
+.slick-slide {
+    padding-inline: 5px !important;
+}
+.slick-next::before, .slick-prev::before {
+    content: none !important;
+}
+.slick-prev {
+    left: -15px !important;
+}
+.slick-next {
+    right: -20px !important;
+}
+.slick-next, .slick-prev {
+    z-index: 50;
+}
+.slick-disabled {
+    opacity: 0.3 !important;
 }

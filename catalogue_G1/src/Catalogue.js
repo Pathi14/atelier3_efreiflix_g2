@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { ProductsList } from "./components/ProductsList";
 import "./styles.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function groupMoviesByCategory(movies) {
   // Initialize an empty object to store movies by genre
@@ -57,7 +59,11 @@ const Catalogue = () => {
     <div className="rounded-lg p-6">
       <div className="pb-6">
         <h1 className="text-2xl font-semibold">Only on Efreiflix</h1>
-        <p>Efreiflix is the home of amazing original programming that you can’t find anywhere else. Movies, TV shows, specials and more, all tailored specifically to you.</p>
+        <p>
+          Efreiflix is the home of amazing original programming that you can’t
+          find anywhere else. Movies, TV shows, specials and more, all tailored
+          specifically to you.
+        </p>
       </div>
       {Object.entries(moviesByGenre).map(([genre, movies]) => (
         <div key={genre}>
